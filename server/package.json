@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ts-mocha test/index.spec.ts  --unhandled-rejections=strict",
+    "start": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27",
+    "@types/supertest": "^2.0.10",
+    "express": "^4.17.1",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
+    "reflect-metadata": "^0.1.13",
+    "solstice-shared-types": "file:../shared-types",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.0.1",
+    "mocha": "^8.1.0",
+    "nyc": "^15.1.0",
+    "supertest": "^4.0.2",
+    "ts-mocha": "^7.0.0"
+  }
+}
